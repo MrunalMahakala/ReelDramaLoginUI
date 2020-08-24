@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:targetApi="lollipop"
+    app:popupTheme="@style/AppTheme"
+    android:id="@+id/custom_toolbar"
+    android:background="#09080C">
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/reel"
+        android:background="#E7E4ED"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HELP"
+        android:textStyle="bold"
+        android:textColor="#E7E4ED"
+        android:textSize="30dp"
+        android:layout_marginLeft="230dp"/>
+
+</Toolbar>

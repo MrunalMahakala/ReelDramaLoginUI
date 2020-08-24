@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".step1"
+    android:background="#09080C"
+    android:orientation="vertical">
+    <include layout="@layout/custom_toolbar"/>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Create your Account"
+                android:textSize="30sp"
+                android:textColor="#E7E4ED"
+
+                android:gravity="center"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="step 1 of 2 Enter your Personal details "
+                android:textColor="#95FDFCFD"
+                android:textSize="15sp"
+                android:gravity="center"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:hint="First Name"
+
+                android:layout_margin="20dp"
+                android:textColorHint="#E7E4ED"
+                app:boxStrokeColor="#E7E4ED"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+
+                android:layout_margin="20dp"
+                android:textColorHint="#E7E4ED"
+                app:boxStrokeColor="#E7E4ED"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GENDER"
+                android:layout_margin="20dp"
+                android:textColorHint="#E7E4ED"
+                app:boxStrokeColor="#E7E4ED"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <DatePicker
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#E7E4ED"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="GENDER"
+
+                android:textColor="#EA4CEF"
+
+                android:gravity="left"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#E7E4ED"
+                    android:layout_margin="10dp"
+                    android:text="MALE"/>
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#E7E4ED"
+                    android:text="FEMALE"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EF21D3"
+                android:text="NEXT"
+                android:textColor="#E7E4ED"
+                android:layout_margin="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="OR"
+                android:textSize="30sp"
+                android:textColor="#E7E4ED"
+
+                android:gravity="center"/>
+
+            <com.shaishavgandhi.loginbuttons.FacebookButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/facebook_login"
+                android:text="Sign in with Facebook "
+                android:layout_margin="20dp"
+                />
+            <com.shaishavgandhi.loginbuttons.GoogleButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/google_login"
+                android:layout_margin="20dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/goto_main"
+                android:textColor="#95FDFCFD"
+                android:gravity="center"
+                android:layout_margin="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/terms_conditions"
+                android:textColor="#95FDFCFD"
+                android:layout_margin="20dp"/>
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

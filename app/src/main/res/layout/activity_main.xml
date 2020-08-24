@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#09080C"
+    android:orientation="vertical"
+   >
+    <include layout="@layout/custom_toolbar"/>
+    <ScrollView 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:text="SIGN IN"
+    android:textSize="30sp"
+    android:textColor="#E7E4ED"
+
+    android:gravity="center"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:hint="Email"
+        android:layout_margin="20dp"
+        android:textColorHint="#E7E4ED"
+        app:boxStrokeColor="#E7E4ED"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#E7E4ED"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+
+        android:layout_margin="20dp"
+        android:textColorHint="#E7E4ED"
+        app:boxStrokeColor="#E7E4ED"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textColor="#E7E4ED"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="SIGN IN"
+        android:textColor="#E7E4ED"
+        android:layout_margin="20dp"/>
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="REGISTER"
+        android:textColor="#E7E4ED"
+        android:layout_margin="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="OR"
+        android:textSize="30sp"
+        android:textColor="#E7E4ED"
+
+        android:gravity="center"/>
+
+   <com.shaishavgandhi.loginbuttons.FacebookButton
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/facebook_login"
+       android:text="Sign in with Facebook "
+       android:layout_margin="20dp"
+       />
+    <com.shaishavgandhi.loginbuttons.GoogleButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/google_login"
+        android:layout_margin="20dp"
+        />
+</TableLayout>
+
+    
+</ScrollView>
+</LinearLayout>
